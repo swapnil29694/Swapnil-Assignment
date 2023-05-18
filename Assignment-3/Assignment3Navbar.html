@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        var navBar = document.createElement('nav');
+        
+       
+        var home = document.createElement('a');
+        home.textContent = 'Home';
+        home.href = '#';
+        
+        
+        var contact = document.createElement('a');
+        contact.textContent = 'Contact Us';
+        contact.href = '#';
+        
+        
+        var signUp = document.createElement('a');
+        signUp.textContent = 'Sign Up';
+        signUp.href = '#';
+        
+       
+        var signIn = document.createElement('a');
+        signIn.textContent = 'Sign In';
+        signIn.href = '#';
+        
+       
+        navBar.style.backgroundColor = '#000000';
+        navBar.style.padding = '10px';
+        navBar.style.display = 'flex';
+        navBar.style.justifyContent = 'space-around';
+        
+        var links = [home, contact, signUp, signIn];
+        links.forEach(function(link)
+     {
+          link.style.marginRight = '10px';
+          link.style.textDecoration = 'none';
+          link.style.color = '#FFFFFF';
+        });
+        
+        links.forEach(function(link)
+     {
+          navBar.appendChild(link)
+    ;
+        });
+        
+        document.body.appendChild(navBar);
+      </script>
+
+</script>
+</body>
+</html>
